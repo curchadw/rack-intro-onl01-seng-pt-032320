@@ -1,6 +1,8 @@
-require 'rack'  
+require 'rack'
+ 
 
-my_server = Proc.new do [200, {'Content-Type' => 'text/html'}, ['<em>Hello</em>']]
+my_server = Proc.new do
+  [200, { 'Content-Type' => 'text/html' }, ['<em>Hello</em>']]
 end
-
-run_my_myserver
+ 
+run my_server
